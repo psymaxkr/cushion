@@ -9,5 +9,6 @@ const js=fs.readFileSync(import.meta.dirname+'/build/app.js','utf8').replaceAll(
 const out=import.meta.dirname+'/../index.html';
 let h=fs.readFileSync(out,'utf8');
 h=h.slice(0,h.indexOf('<style>')+7)+css+h.slice(h.indexOf('</style>'));
-h=h.slice(0,h.lastIndexOf('<script>')+8)+js+h.slice(h.lastIndexOf('</script>'));
+const a=h.indexOf('<script>',h.indexOf('</style>'))+8; // 번들 안의 '<script>' 문자열과 혼동하지 않도록 </style> 뒤 첫 태그 사용
+h=h.slice(0,a)+js+h.slice(h.lastIndexOf('</script></body>'));
 fs.writeFileSync(out,h); console.log('index.html rebuilt');

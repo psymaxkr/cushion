@@ -1,10 +1,10 @@
-# DAYCER × CUSHION · Tokenomics Studio
+# DAYCER DYR · Tokenomics Studio
 
 투자 브리핑용 인터랙티브 토크노믹스 대시보드 (정적 사이트, GitHub Pages).
 
 - 배포 주소: https://psymaxkr.github.io/cushion/
 - 사이트 파일: 저장소 루트 `index.html` (React·Recharts·Lucide·Tailwind를 미리 빌드해 한 파일에 포함, 외부 CDN 없음)
-- 원본: `source/src/original.html` / 편집용 소스: `source/src/app.jsx`, `source/src/style.css`
+- 편집용 소스: `source/src/app.jsx`, `source/src/style.css`
 
 ## 수정 후 재배포
 ```
