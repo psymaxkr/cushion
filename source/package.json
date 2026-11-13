@@ -1,5 +1,5 @@
 {
-  "name": "daycer-cushion-dashboard",
+  "name": "daycer-dyr-dashboard",
   "private": true,
   "scripts": { "build": "node build.mjs" },
   "dependencies": {
